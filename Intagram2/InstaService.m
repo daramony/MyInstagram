@@ -41,6 +41,7 @@
 #define INSTA_IMAGE_WIDTH @"images.standard_resolution.width"
 #define INSTA_IMAGE_HEIGHT @"images.standard_resolution.height"
 #define INSTA_TYPE @"type"
+#define INSTA_VIDEO_URL @"videos.standard_resolution.url"
 
 - (void)getMyFeedWithCompletionHandler:(void(^)(NSMutableArray *list))complete {
     NSMutableArray *resultList = [[NSMutableArray alloc] init];
@@ -61,12 +62,13 @@
                 InstaEntity *entity = [[InstaEntity alloc] init];
                 entity.username = [data valueForKeyPath:INSTA_USERNAME];
                 entity.fullname = [data valueForKeyPath:INSTA_FULLNAME];
-                if (entity.fullname.length == 0) entity.fullname = entity.username;
                 entity.profileImageURL = [data valueForKeyPath:INSTA_PROFILE_IMAGE_URL];
                 entity.imageURL = [data valueForKeyPath:INSTA_IMAGE_URL];
                 entity.type = [[data valueForKeyPath:INSTA_TYPE] isEqualToString:@"image"] ? InstaTypeImage : InstaTypeVideo;
                 entity.width = [[data valueForKeyPath:INSTA_IMAGE_WIDTH] integerValue];
                 entity.height = [[data valueForKeyPath:INSTA_IMAGE_HEIGHT] integerValue];
+                if (entity.fullname.length == 0) entity.fullname = entity.username;
+                if (entity.type == InstaTypeVideo) entity.videoURL = [data valueForKeyPath:INSTA_VIDEO_URL];
                 [resultList addObject:entity];
             }
             

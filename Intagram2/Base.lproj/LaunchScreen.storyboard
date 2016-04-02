@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="bro-A7-ktz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc1-wD-IFz">
+                                <rect key="frame" x="20" y="38" width="280" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nc1-wD-IFz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="16L-vN-O1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bro-A7-ktz" secondAttribute="trailing" id="AzC-Fd-tnB"/>
+                            <constraint firstItem="bro-A7-ktz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Dgq-LZ-33D"/>
+                            <constraint firstItem="bro-A7-ktz" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="PdR-pF-Lm0"/>
+                            <constraint firstItem="bro-A7-ktz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QWq-nb-a8J"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Nc1-wD-IFz" secondAttribute="bottom" constant="399" id="Vau-am-7Z8"/>
+                            <constraint firstItem="Nc1-wD-IFz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="18" id="eER-DO-6E3"/>
+                            <constraint firstItem="Nc1-wD-IFz" firstAttribute="centerX" secondItem="bro-A7-ktz" secondAttribute="centerX" id="mSo-s0-gup"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bird" width="360" height="640"/>
+    </resources>
 </document>

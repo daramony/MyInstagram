@@ -18,8 +18,10 @@
                        NSURL *url = [NSURL URLWithString:urlString];
                        NSData *data = [NSData dataWithContentsOfURL:url];
                        dispatch_sync(dispatch_get_main_queue(), ^{
-                           UIImage *image = [UIImage imageWithData:data];
-                           [self setImage:image];
+                           if ([urlString isEqualToString:url.absoluteString]) {
+                               UIImage *image = [UIImage imageWithData:data];
+                               [self setImage:image];
+                           }
                        });
                    });
 }

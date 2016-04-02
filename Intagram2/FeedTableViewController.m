@@ -11,11 +11,15 @@
 #import "BodyTableViewCell.h"
 #import "InstaService.h"
 #import "UIImageView+AsyncLoad.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface FeedTableViewController ()
 
 @property (strong, nonatomic) NSMutableArray *dataList;
 @property (strong, nonatomic) InstaService *instaService;
+@property (assign, nonatomic) NSInteger indexSelected;
 
 @end
 
@@ -141,7 +145,21 @@
         [self getMyFeedMore];
     }
     
+    if (entity.type == InstaTypeVideo) {
+        [cell setupPlayer:entity];
+    }
+    
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    BodyTableViewCell *cell2 = (BodyTableViewCell *) cell;
+    InstaEntity *entity = self.dataList[indexPath.section];
+    if (entity.type == InstaTypeVideo) {
+        [cell2 clearPlayer];
+    }
+}
+
+
 
 @end

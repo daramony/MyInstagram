@@ -22,5 +22,6 @@ typedef enum : NSUInteger {
 @property (assign, nonatomic) InstaType type;
 @property (assign, nonatomic) NSInteger width;
 @property (assign, nonatomic) NSInteger height;
+@property (strong, nonatomic) NSString *videoURL;
 
 @end

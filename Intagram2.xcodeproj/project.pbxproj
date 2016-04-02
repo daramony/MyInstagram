@@ -20,6 +20,7 @@
 		18A3ED0D1CA63A9400383C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A3ED0B1CA63A9400383C51 /* Main.storyboard */; };
 		18A3ED0F1CA63A9400383C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A3ED0E1CA63A9400383C51 /* Assets.xcassets */; };
 		18A3ED121CA63A9400383C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A3ED101CA63A9400383C51 /* LaunchScreen.storyboard */; };
+		18E79E7E1CAE2D0800FDC1CD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E79E7D1CAE2D0800FDC1CD /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		18A3ED0E1CA63A9400383C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A3ED111CA63A9400383C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A3ED131CA63A9400383C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E79E7D1CAE2D0800FDC1CD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E79E7E1CAE2D0800FDC1CD /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		18A3ECF61CA63A9400383C51 = {
 			isa = PBXGroup;
 			children = (
+				18E79E7D1CAE2D0800FDC1CD /* MediaPlayer.framework */,
 				18A3ED011CA63A9400383C51 /* Intagram2 */,
 				18A3ED001CA63A9400383C51 /* Products */,
 			);
@@ -353,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Intagram2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Intagram2;
@@ -364,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Intagram2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Intagram2;

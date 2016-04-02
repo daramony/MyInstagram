@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InstaEntity.h"
 
 @interface BodyTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *bodyImageView;
+
+-(void)setupPlayer:(InstaEntity *) entity;
+-(void)clearPlayer;
 
 @end
