@@ -38,7 +38,7 @@
 		183134C01CA79219009E707F /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 		183134C31CA7962C009E707F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		183134C41CA7962C009E707F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		18A3ECFF1CA63A9400383C51 /* Intagram2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intagram2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A3ECFF1CA63A9400383C51 /* IntagramObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntagramObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A3ED031CA63A9400383C51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A3ED051CA63A9400383C51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A3ED061CA63A9400383C51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		18A3ED001CA63A9400383C51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18A3ECFF1CA63A9400383C51 /* Intagram2.app */,
+				18A3ECFF1CA63A9400383C51 /* IntagramObjc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18A3ECFE1CA63A9400383C51 /* Intagram2 */ = {
+		18A3ECFE1CA63A9400383C51 /* IntagramObjc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18A3ED161CA63A9400383C51 /* Build configuration list for PBXNativeTarget "Intagram2" */;
+			buildConfigurationList = 18A3ED161CA63A9400383C51 /* Build configuration list for PBXNativeTarget "IntagramObjc" */;
 			buildPhases = (
 				18A3ECFB1CA63A9400383C51 /* Sources */,
 				18A3ECFC1CA63A9400383C51 /* Frameworks */,
@@ -181,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = Intagram2;
+			name = IntagramObjc;
 			productName = Intagram2;
-			productReference = 18A3ECFF1CA63A9400383C51 /* Intagram2.app */;
+			productReference = 18A3ECFF1CA63A9400383C51 /* IntagramObjc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18A3ECFA1CA63A9400383C51 /* Build configuration list for PBXProject "Intagram2" */;
+			buildConfigurationList = 18A3ECFA1CA63A9400383C51 /* Build configuration list for PBXProject "IntagramObjc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18A3ECFE1CA63A9400383C51 /* Intagram2 */,
+				18A3ECFE1CA63A9400383C51 /* IntagramObjc */,
 			);
 		};
 /* End PBXProject section */
@@ -380,7 +380,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18A3ECFA1CA63A9400383C51 /* Build configuration list for PBXProject "Intagram2" */ = {
+		18A3ECFA1CA63A9400383C51 /* Build configuration list for PBXProject "IntagramObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18A3ED141CA63A9400383C51 /* Debug */,
@@ -389,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18A3ED161CA63A9400383C51 /* Build configuration list for PBXNativeTarget "Intagram2" */ = {
+		18A3ED161CA63A9400383C51 /* Build configuration list for PBXNativeTarget "IntagramObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18A3ED171CA63A9400383C51 /* Debug */,

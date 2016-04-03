@@ -122,6 +122,7 @@
     [cell.headImageView asyncLoadWithURLString:entity.profileImageURL];
     [cell.headImageView makeCornerRadius];
     cell.headLabel.text = entity.fullname;
+
     
     UIView *view = [[UIView alloc] initWithFrame:[cell frame]];
     cell.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -140,6 +141,7 @@
     InstaEntity *entity = self.dataList[indexPath.section];
 
     [cell.bodyImageView asyncLoadWithURLString:entity.imageURL];
+    cell.statusLabel.text = entity.status;
  
     if (indexPath.section == self.dataList.count-2) {
         [self getMyFeedMore];

@@ -12,6 +12,7 @@
 @interface BodyTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *bodyImageView;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 -(void)setupPlayer:(InstaEntity *) entity;
 -(void)clearPlayer;

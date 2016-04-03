@@ -23,5 +23,6 @@ typedef enum : NSUInteger {
 @property (assign, nonatomic) NSInteger width;
 @property (assign, nonatomic) NSInteger height;
 @property (strong, nonatomic) NSString *videoURL;
+@property (strong, nonatomic) NSString *status;
 
 @end

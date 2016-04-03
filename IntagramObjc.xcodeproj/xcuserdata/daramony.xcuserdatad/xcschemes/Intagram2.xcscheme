@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "18A3ECFE1CA63A9400383C51"
-               BuildableName = "Intagram2.app"
-               BlueprintName = "Intagram2"
+               BuildableName = "IntagramObjc.app"
+               BlueprintName = "IntagramObjc"
                ReferencedContainer = "container:Intagram2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18A3ECFE1CA63A9400383C51"
-            BuildableName = "Intagram2.app"
-            BlueprintName = "Intagram2"
+            BuildableName = "IntagramObjc.app"
+            BlueprintName = "IntagramObjc"
             ReferencedContainer = "container:Intagram2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18A3ECFE1CA63A9400383C51"
-            BuildableName = "Intagram2.app"
-            BlueprintName = "Intagram2"
+            BuildableName = "IntagramObjc.app"
+            BlueprintName = "IntagramObjc"
             ReferencedContainer = "container:Intagram2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18A3ECFE1CA63A9400383C51"
-            BuildableName = "Intagram2.app"
-            BlueprintName = "Intagram2"
+            BuildableName = "IntagramObjc.app"
+            BlueprintName = "IntagramObjc"
             ReferencedContainer = "container:Intagram2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

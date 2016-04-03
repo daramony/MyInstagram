@@ -116,6 +116,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="bodyImageView" destination="vja-vD-kGo" id="2Yq-2E-5yz"/>
+                                    <outlet property="statusLabel" destination="4Hi-X0-vAF" id="Ifz-C7-i1a"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

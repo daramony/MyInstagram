@@ -18,7 +18,6 @@
 @end
 
 
-
 @implementation ViewController {
     NSString *clientId;
     NSString *clientSecret;
@@ -98,10 +97,12 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    /*
     if ([segue.identifier isEqualToString:@"FeedTable"]) {
         UINavigationController *navigationController = segue.destinationViewController;
         FeedTableViewController *feed = [navigationController.viewControllers firstObject];
     }
+     */
 }
 
 - (void)testLogin {
